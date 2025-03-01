@@ -14,7 +14,7 @@ public class PrinterQueue {
         while (!input.equals("print")) {
 
             if (input.equals("cancel")) {
-                if (queue.size() > 0) {
+                if (!queue.isEmpty()) {
                     String cancel = queue.poll();
                     System.out.println("Canceled " + cancel);
                 } else {
